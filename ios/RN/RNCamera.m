@@ -915,7 +915,7 @@ BOOL _sessionInterrupted = NO;
 
                     NSMutableDictionary *response = [[NSMutableDictionary alloc] init];
 
-                    NSString *path = [RNFileSystem generatePathInDirectory:[[RNFileSystem cacheDirectoryPath] stringByAppendingPathComponent:@"Camera"] withExtension:@".jpg"];
+                    NSString *path = [RNFileSystem generatePathInDirectory:[[RNFileSystem cacheDirectoryPath] stringByAppendingPathComponent:@"Camera"] withExtension:@".heic"];
 
                     if (![options[@"doNotSave"] boolValue]) {
                         response[@"uri"] = [RNImageUtils writeImage:destData toPath:path];
